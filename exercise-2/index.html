@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Api</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="card-top">
+                <img src="https://cdn.pixabay.com/photo/2022/10/29/19/21/golden-eagle-7555959_960_720.jpg" alt="bird">
+            </div>
+
+            <div class="class-detail">
+                <p>name: <span id="name"></span></p>
+                <p>abilities:</p>
+                <ul id="abilities"></ul>
+            </div>
+        </div>
+
+        <div class="block-btn">
+            <button class="btn" id="left-btn"><span>left</span></button>
+            <button class="btn" id="right-btn"><span>right</span></button>
+        </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
