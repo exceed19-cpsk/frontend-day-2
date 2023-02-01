@@ -1,11 +1,15 @@
-const URL = "https://pokeapi.co/api/v2/pokemon"
 const imgEl = document.querySelector("img")
 const leftBtnEl = document.getElementById("left-btn")
 const rightBtnEl = document.getElementById("right-btn")
 const nameEl = document.getElementById("name")
 const abilitiesEl = document.getElementById("abilities")
 
+import axios from "axios"
 
+/* URL สำหรับการดึงข้อมูลจาก Rest Api */
+const URL = "https://pokeapi.co/api/v2/pokemon"
+
+/* pokemon ตัวปัจจุบัน ในที่นี้ให้เริ่มที่ตัวที่ 1 */
 let quantity = 1
 
 
@@ -13,7 +17,6 @@ let quantity = 1
 async function fetchApi(pokemon) {
     try {
         const result = await axios.get(`${URL}/${pokemon}`)
-        console.log(result.data)
         const picture = result.data.sprites.front_default
         const name = result.data.name
         const abilities = result.data.abilities
@@ -56,6 +59,5 @@ function displayCard(picture,name,abilities) {
         abilitiesEl.appendChild(liEl)
     }
 }
-
 
 fetchApi(quantity)
