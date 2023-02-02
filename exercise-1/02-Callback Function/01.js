@@ -8,6 +8,9 @@ function func1(number,func){
 }
 
 const gen20 = () => (20)
+// ลองทบทวนกันนิดนึง ว่า Function นี้ทำอะไร ถ้าเขียนเป็นแบบปกติน่าจะเขียนยังไงนะ
+// คำใบ้: ลองกลับไปดูข้อก่อนหน้า หรือลองรันดูก็ได้
+// console.log(gen20())
 
 console.log(func1(10,gen20))
 console.log(func1(0,gen20))
