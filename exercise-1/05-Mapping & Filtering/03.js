@@ -55,6 +55,5 @@ console.log(numberArr.filter(isPrime))
 console.log(numberArr.filter(isPrime).map(value => value + 3))
 // ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .filter() เราเหลือค่าอะไรบ้าง
 
-
 console.log(numberArr.map(value => value + 3).filter(isPrime))
 // ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .map() ค่าถูกเปลี่ยนไปเป็นอย่างไรบ้าง
