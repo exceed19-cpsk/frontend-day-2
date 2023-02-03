@@ -20,3 +20,7 @@ console.log(new_item3)
 let new_item4 = {price: 999.99,...item}
 console.log(new_item4)
 // ทำไมค่า price จึงยังมีราคาเท่าเดิมกับ item ตอนแรก ทั้งที่เราใส่ 999.99 ไปแล้ว
+
+let new_item5 = {...item,stock: item.stock-1}
+console.log(new_item5)
+// ทำไมถึงได้ผลลัพธ์เช่นนั้น
