@@ -11,20 +11,20 @@
 const data = ['ant','bird','cat','dog','egg']
 
 console.log(data.filter(value => true))
-// คิดว่าการที่ <Array>.filter() นั้นทำอะไรกันนะ (ตรงนี้อาจจะยังไม่เห็นภาพ)
+// [?] คิดว่าการที่ <Array>.filter() นั้นทำอะไรกันนะ (ตรงนี้อาจจะยังไม่เห็นภาพ)
 
 console.log(data.filter(value => false))
-// ตอนนี้น่าจะรู้แล้ว
+// [?] ตอนนี้น่าจะรู้แล้ว
 
 console.log(data.filter((value,index) => index % 2 === 0))
-// ทำไมจึงได้ผลลัพธ์เป็นแบบนี้
+// [?] ทำไมจึงได้ผลลัพธ์เป็นแบบนี้
 
 console.log(data.filter((value) => value === 'ant'))
 console.log(data.filter((value,index) => index === 2))
 console.log(data.filter((value,index,array) => array.length === 5))
-// คิดว่าตัว Parameter ทั้ง 3 ตัว (value,index,array) แต่ละตัวทำหน้าที่เหมือนกับ ตอนที่เราใส่ใน .map() ไหม
+// [?] คิดว่าตัว Parameter ทั้ง 3 ตัว (value,index,array) แต่ละตัวทำหน้าที่เหมือนกับ ตอนที่เราใส่ใน .map() ไหม
 
-// ทีนี้เนื่องจากทั้ง filter และ map จะคืนค่ากลับมาเป็น Array ทำให้เราสามารถนำมาคอมโบกันได้
+// [?] ทีนี้เนื่องจากทั้ง filter และ map จะคืนค่ากลับมาเป็น Array ทำให้เราสามารถนำมาคอมโบกันได้
 console.log(data.filter((value,index) => index >= 2).map(value => value.toUpperCase()))
 
 function isPrime(number){
@@ -44,16 +44,16 @@ console.log(isPrime(2))
 console.log(isPrime(4))
 console.log(isPrime(7))
 console.log(isPrime(9))
-// คิดว่า Function นี้ทำอะไรได้
-// คิดว่ามัน Optimal รึยัง (ขำๆนะครับ ไม่ต้องคิดจริงจังก็ได้ จะข้ามคำถามนี้ไปเลยก็ได้ครับ)
+// [?] คิดว่า Function นี้ทำอะไรได้
+// [?] คิดว่ามัน Optimal รึยัง (ขำๆนะครับ ไม่ต้องคิดจริงจังก็ได้ จะข้ามคำถามนี้ไปเลยก็ได้ครับ)
 
 const numberArr = [2,3,8,10,15]
 
 console.log(numberArr.filter(isPrime))
-// ทำไมจึงได้ผลลัพธ์เช่นนี้
+// [?] ทำไมจึงได้ผลลัพธ์เช่นนี้
 
 console.log(numberArr.filter(isPrime).map(value => value + 3))
-// ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .filter() เราเหลือค่าอะไรบ้าง
+// [?] ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .filter() เราเหลือค่าอะไรบ้าง
 
 console.log(numberArr.map(value => value + 3).filter(isPrime))
-// ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .map() ค่าถูกเปลี่ยนไปเป็นอย่างไรบ้าง
+// [?] ทำไมจึงได้ผลลัพธ์เช่นนี้ ตอน .map() ค่าถูกเปลี่ยนไปเป็นอย่างไรบ้าง

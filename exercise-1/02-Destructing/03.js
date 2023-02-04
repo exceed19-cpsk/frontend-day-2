@@ -47,7 +47,7 @@ function viewPromotion2(item){
 
 console.log(viewPromotion2(apple))
 console.log(viewPromotion2(icecream))
-// คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 1
+// [?] คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 1
 
 function viewPromotion3({ tags,price }){
     if(tags.includes("fruit")){
@@ -63,4 +63,4 @@ function viewPromotion3({ tags,price }){
 
 console.log(viewPromotion3(apple))
 console.log(viewPromotion3(icecream))
-// คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 2 และมีอะไรที่เขียนแตกต่างกัน
+// [?] คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 2 และมีอะไรที่เขียนแตกต่างกัน

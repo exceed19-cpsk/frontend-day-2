@@ -10,20 +10,22 @@ const data = ['ant','bird','cat','dog','egg']
 
 let map_1 = data.map((a) => (a))
 console.log('Map #1 =',map_1)
-// คิดว่าการที่ <Array>.map() นั้นทำอะไรกันนะ (ตรงนี้อาจจะยังไม่เห็นภาพ)
+// [?] คิดว่าการที่ <Array>.map() นั้นทำอะไรกันนะ (ตรงนี้อาจจะยังไม่เห็นภาพ)
 
 let map_2 = data.map((a) => (a + 'Extra'))
 console.log('Map #2 =',map_2)
-// ประมาณนี้พอตอบได้รึยังว่ามันน่าจะทำอะไร (ว่าแต่ทำไม Function เขียนโดยใช้วงเล็บแบบ (a) แทนที่จะเป็น {return a} พอจำได้ไหมว่าคืออะไร)
-// คิดว่าตัวแปร a น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน a เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
+// [?] ประมาณนี้พอตอบได้รึยังว่ามันน่าจะทำอะไร (ว่าแต่ทำไม Function เขียนโดยใช้วงเล็บแบบ (a) แทนที่จะเป็น {return a} พอจำได้ไหมว่าคืออะไร)
+// [?] คิดว่าตัวแปร a น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน a เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
 
-console.log('Map #3 =',data.map((a,b) => (b)))
-// คิดว่าตัวแปร b น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน b เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
+let map_3 = data.map((a,b) => (b))
+console.log('Map #3 =',map_3)
+// [?] คิดว่าตัวแปร b น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน b เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
 
-console.log('Map #4 =',data.map((a,b,c) => (c)))
-// คิดว่าตัวแปร c น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน c เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
+let map_4 = data.map((a,b,c) => (c))
+console.log('Map #4 =',map_4)
+// [?] คิดว่าตัวแปร c น่าจะหมายถึงอะไรใน Array "data" และถ้าเปลี่ยน c เป็นตัวอื่นจะยังได้ค่าเดิมอยู่ไหม
 
-// ถ้าเรามองว่า .map() เป็น Callback Function คิดว่ามันทำงานอย่างไรบ้าง
+// [?] ถ้าเรามองว่า .map() เป็น Callback Function คิดว่ามันทำงานอย่างไรบ้าง
 
 function capitalLetter(text){
     return text[0].toUpperCase() + text.slice(1)
@@ -32,7 +34,8 @@ function capitalLetter(text){
 console.log('5.1 =',capitalLetter("hello"))
 console.log('5.2 =',capitalLetter("i"))
 console.log('5.3 =',capitalLetter("okay"))
-// คิดว่า capitalLetter() มีหน้าที่ทำอะไร
+// [?] คิดว่า capitalLetter() มีหน้าที่ทำอะไร
 
-console.log('Map #5 =',data.map(capitalLetter))
-// คิดว่าทำไมผลลัพธ์จึงเป็นเช่นนั้น
+let map_5 = data.map(capitalLetter)
+console.log('Map #5 =',map_5)
+// [?] คิดว่าทำไมผลลัพธ์จึงเป็นเช่นนั้น

@@ -1,6 +1,7 @@
 /* 
 ในโจทย์นี้ เราจะรวมทั้ง .map() และ .filter() ไปพร้อมๆ กันเลย
 
+[EXERCISE]
 ลองสร้าง Array ต่อไปนี้จาก "data" ซึ่งเป็น Array ที่มีเลข 1 ถึง 50ฃ
 โดยใช้แค่ map และ filter เท่านั้น
 */
@@ -14,6 +15,7 @@ const create1to50Array = () => {
 }
 
 const data = create1to50Array()
+
 /* 
 [
     2,  4,  6,  8, 10, 12, 14, 16,

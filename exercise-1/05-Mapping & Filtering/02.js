@@ -1,6 +1,6 @@
 const data = ['ant','bird','cat','dog','egg']
 
-// ลองใช้ Method .map() เพื่อสร้าง Array ใหม่จาก "data" ตามที่กำหนดให้
+// [EXERCISE] ลองใช้ Method .map() เพื่อสร้าง Array ใหม่จาก "data" ตามที่กำหนดให้
 
 // [ 'a', 'b', 'c', 'd', 'e' ]
 console.log(data.map(value => value[0]))

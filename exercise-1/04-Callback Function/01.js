@@ -23,4 +23,4 @@ console.log(addNormal)
 console.log(addAnonymous)
 console.log(addArrow)
 console.log(addArrowButShorter)
-// คิดว่าสิ่งที่แสดงออกมา มีความหมายว่าอะไร
+// [?] คิดว่าสิ่งที่แสดงออกมา มีความหมายว่าอะไร แล้วมันต่างกับการเรียก Function แบบปกติ (เรียกแบบมีวงเล็บ "()" ต่อท้าย) ยังไง
