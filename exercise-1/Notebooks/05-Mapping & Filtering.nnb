@@ -3,7 +3,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Part 5 - Mapping & Filtering\r\n\r\nหลังจากเข้าใจ Concept ของตัว Callback Function แล้วเราจะมาใช้ Method ของ Array ที่ใช้สำหรับ\r\nการสร้าง Array ใหม่จาก Array เดิม ที่มีประโยชน์มากๆนั่นคือการ \"Map\" และการ \"Filter\" นั่นเอง\r\nถ้าเคยเขียน Python มาเนี่ย 2 อย่างนี้ จะคล้ายๆ กับการทำ List Comprehension (`[i for i in range(10)]`)"
+                "# Part 5 - Mapping & Filtering\r\n\r\nหลังจากเข้าใจ Concept ของตัว Callback Function แล้วเราจะมาใช้ Method ของ Array ที่ใช้สำหรับ\r\nการสร้าง Array ใหม่จาก Array เดิม ที่มีประโยชน์มากๆ  \r\nนั่นคือการ \"Map\" และการ \"Filter\" นั่นเอง โดยที่ทั้ง 2  Method นี้จะใช้แนวคิดของ Callback Function มาเกี่ยวข้อง  \r\nถ้าเคยเขียน Python มาเนี่ย 2 อย่างนี้ จะคล้ายๆ กับการทำ List Comprehension (`[i for i in range(10)]`)"
             ],
             "outputs": []
         },

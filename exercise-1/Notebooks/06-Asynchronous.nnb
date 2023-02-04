@@ -3,14 +3,14 @@
         {
             "language": "markdown",
             "source": [
-                "# Part 6 -  async-await"
+                "# Part 6 - Asynchronous"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "ในข้อหัวนี้เราจะไปดูในเรื่องของการใช้ **async await** กัน แต่ก่อนหน้านี้\r\nจะขอเกริ่นความเข้าใจเบื้องต้นให้น้องๆกันก่อน สำหรับ javascript นั้นจะมีการทำงานแบบ\r\nasynchronous คือมีการทำงานแบบเบื้องหลัง ก็คือจะไม่ทำงานเรียงตามลำดับของการเขียนโค้ด\r\n- Kana"
+                "ในข้อหัวนี้เราจะไปดูในเรื่องของการใช้ `async`/`await` กัน แต่ก่อนหน้านี้\r\nจะขอเกริ่นความเข้าใจเบื้องต้นให้น้องๆกันก่อน สำหรับ JavaScript นั้นจะมีการทำงานแบบ\r\nAsynchronous คือมีการทำงานแบบเบื้องหลัง ก็คือจะไม่ทำงานเรียงตามลำดับของการเขียนโค้ด\r\n- Kana"
             ],
             "outputs": []
         },
@@ -33,6 +33,7 @@
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
                                 "Hello Python",
+                                "",
                                 "Hello Javascript",
                                 ""
                             ]
