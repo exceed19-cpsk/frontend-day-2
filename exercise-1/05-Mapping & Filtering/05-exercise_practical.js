@@ -2,7 +2,6 @@
 ต่อมาเรามาลองใช้เรื่อง Map/Filter/Spread Operator ทำงานกับข้อมูลจริงมากขึ้น
 เนื่องจากโดยปกติเราที่เป็นฝั่ง Frontend จะคอยรับข้อมูลจากฝั่ง Backend
 เป็นแบบ JSON ซึ่งข้อมูลจะมีลักษณะเป็น Array of Object (เป็น Array ที่ข้างในมีข้อมูลเป็น Object) เหมือนด้านล่าง
-
 */
 
 const data = [
@@ -44,3 +43,4 @@ console.log(result2)
   { name: 'Belle', age: 51, salary: 7200 }
 ]
 */
+

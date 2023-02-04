@@ -1,9 +1,10 @@
 /*
+[INTRODUCTION]
 หลังจากเข้าใจ Concept ของตัว Callback Function แล้วเราจะมาใช้ Method ของ Array ที่ใช้สำหรับ
 การสร้าง Array ใหม่จาก Array เดิม ที่มีประโยชน์มากๆนั่นคือการ "Map" และการ "Filter" นั่นเอง
 ถ้าเคยเขียน Python มาเนี่ย 2 อย่างนี้ จะคล้ายๆ กับการทำ List Comprehension ([i for i in range(10)])
 
-เราจะขอเริ่มจากการ Map ก่อนละกันนะครับ
+// เราจะขอเริ่มจากการ Map ก่อนละกันนะครับ
 */
 
 const data = ['ant','bird','cat','dog','egg']

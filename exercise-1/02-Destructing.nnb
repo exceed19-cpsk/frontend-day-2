@@ -1,0 +1,133 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Part #2 - Destructing\r\nหลังจากที่ลองวอร์มการเขียน Syntax ของตัว JavaScript แบบ Basic ไปแล้ว ต่อไปเราจะมาเรียนรู้เทคนิคการเขียนภาษา JavaScript ด้วยของต่างๆที่มีให้เรากันนะครับ ซึ่งของเหล่านี้หากเราใช้เป็นจะมีประโยชน์ และทำให้การเขียนโค้ดเราสะดวกขึ้นมากๆเลยครับ\r\n\r\nในหัวข้อนี้เราจะมาลองแกะข้อมูลภายใน Array/Object กันแล้วเอามายัดใส่ตัวแปรตรงๆ โอเคอาจจะงงที่เขียนไปข้างบน แต่เดี๋ยวลองดูตัวอย่างแล้วอาจจะพอเข้าใจขึ้นก็ได้"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const arr = ['A','B','C','D','E']"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "เราน่าจะเคยประกาศตัวแปรแบบนี้กันใช่ไหมครับ เวลาที่ต้องดึงค่าจาก Array ออกมา"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let a = arr[0]\r\nlet b = arr[1]\r\nconsole.log(a,b)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "A B",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "เราสามารถลดรูปการเขียนสิ่งเหล่านี้ได้ โดยการใช้เทคนิคที่เรียกว่า \"Array Destructing\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let [a,b] = arr\r\nconsole.log(a,b)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "A B",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## 2.1 - Array Destructing\r\nเราจะริ่มทำความเข้าใจการ Destructing โดยเราจะขอยกตัวอย่างจาก Array ก่อน"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const arr = ['A','B','C','D','E']"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let [x] = arr\r\nconsole.log(x)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "<img src=\"https://art.pixilart.com/b09197d64f69d63.png\" width=\"20\"> คิดว่า x แทนค่าอะไรในตัวแปร arr"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let [y,z] = arr\r\nconsole.log(y,z)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "<img src=\"https://art.pixilart.com/b09197d64f69d63.png\" width=\"20\"> คิดว่า y,z แทนค่าอะไรในตัวแปร arr"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}

@@ -8,12 +8,13 @@
 
 function hasSubstring(text,substring){
     let sl = substring.length
+    let count = 0
     for(var i=0;i<=text.length - sl;i++){
         if(text.slice(i,i+sl) === substring){
-            return true
+            count++
         }
     }
-    return false
+    return count
 }
 
 console.log(hasSubstring("ababababababababab","aba"))               // true
