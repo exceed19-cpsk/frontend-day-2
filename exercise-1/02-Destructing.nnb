@@ -61,25 +61,12 @@
             "source": [
                 "let [x] = arr\r\nconsole.log(x)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "A",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "**[Question]** คิดว่า x แทนค่าอะไรในตัวแปร arr [?]"
+                "**[QUESTION]** คิดว่า x แทนค่าอะไรในตัวแปร arr"
             ],
             "outputs": []
         },
@@ -88,25 +75,12 @@
             "source": [
                 "let [y,z] = arr\r\nconsole.log(y,z)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "A B",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "**[Question]** คิดว่า y,z แทนค่าอะไรในตัวแปร arr"
+                "**[QUESTION]** คิดว่า y,z แทนค่าอะไรในตัวแปร arr"
             ],
             "outputs": []
         },
@@ -134,7 +108,70 @@
         {
             "language": "markdown",
             "source": [
-                "**[Question]** คิดว่าถ้าเปลี่ยนตัวแปร name, price, tags จากที่ผ่านมาเป็นตัวแปรอื่น จะยังได้ค่าเดิมอยู่ไหม"
+                "**[QUESTION]** คิดว่าถ้าเปลี่ยนตัวแปร name, price, tags จากที่ผ่านมาเป็นตัวแปรอื่น จะยังได้ค่าเดิมอยู่ไหม"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## 2.3 - Object Destructing In Function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const item_lists = [\r\n    {\r\n        name: \"Apple\",\r\n        price: 40.00,\r\n        tags: [\"fruit\",\"consumable\"],\r\n        stock: 10\r\n    },\r\n    {\r\n        name: \"Ice Cream\",\r\n        price: 70.00,\r\n        tags: [\"dessert\",\"consumable\"],\r\n        stock: 10\r\n    }\r\n]\r\n\r\nlet [ apple,icecream ] = item_lists"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "ต่อมาเราลองสร้าง Function ที่จะคืนราคาโปรโมชั่นกลับมา ตามประเภทขของสินค้าที่เกี่ยวข้อง ดังนี้"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function viewPromotion1(item){\r\n    if(item.tags.includes(\"fruit\")){\r\n        return item.price * 0.75\r\n    }\r\n    else if(item.tags.includes(\"dessert\")){\r\n        return item.price * 0.5\r\n    }\r\n    else{\r\n        return item.price\r\n    }\r\n}\r\n\r\nconsole.log(viewPromotion1(apple))\r\nconsole.log(viewPromotion1(icecream))"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "ด้วยแนวคิดของ Destructing Object ที่ได้ยกตัวอย่างไว้ในข้อที่แล้ว ทำให้เราสามารถสร้าง Function นี้ใหม่ในรูปแบบนี้ได้"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function viewPromotion2(item){\r\n    let { tags,price } = item\r\n    if(tags.includes(\"fruit\")){\r\n        return price * 0.75\r\n    }\r\n    else if(tags.includes(\"dessert\")){\r\n        return price * 0.5\r\n    }\r\n    else{\r\n        return price\r\n    }\r\n}\r\n\r\nconsole.log(viewPromotion2(apple))\r\nconsole.log(viewPromotion2(icecream))"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "**[QUESTION]** คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 1"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function viewPromotion3({ tags,price }){\r\n    if(tags.includes(\"fruit\")){\r\n        return price * 0.75\r\n    }\r\n    else if(tags.includes(\"dessert\")){\r\n        return price * 0.5\r\n    }\r\n    else{\r\n        return price\r\n    }\r\n}\r\n\r\nconsole.log(viewPromotion3(apple))\r\nconsole.log(viewPromotion3(icecream))"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "**[QUESTION]** คิดว่าทำไมการเขียนแบบนี้ จึงสามารถให้ผลลัพธ์เหมือนกับแบบที่ 2 และมีอะไรที่เขียนแตกต่างกัน"
             ],
             "outputs": []
         }
