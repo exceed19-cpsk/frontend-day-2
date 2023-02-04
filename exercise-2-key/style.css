@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Kanit&display=swap');
+
+body {
+    max-width: 1300px;
+    width: 100%;
+    overflow-y: hidden;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+.card {
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-top{
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 55%;
+    object-fit: cover;
+}
+
+.class-detail{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.class-detail p:first-child {
+    padding:0;
+    margin: 0;
+}
+
+.class-detail p:nth-child(2) {
+    padding:0;
+    margin: 0;
+    margin: 0.2rem 0;
+}
+.class-detail ul:last-child {
+    list-style: decimal;
+    padding-left: 2.5rem;
+    margin: 0;
+}
+
+.block-btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.block-btn .btn:first-child {
+    margin-right: 8px;
+}
+
+
+.block-btn .btn {
+    background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+    width: 100px;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn i {
+    color: white;
+}
+
+.btn:hover {
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: 0 0 .25rem rgba(17, 0, 255, 0.5), -.125rem -.125rem 1rem rgba(110, 154, 235, 0.5), .125rem .125rem 1rem rgba(135, 225, 255, 0.5);
+}
+
+@keyframes run-animation-card {
+    from {
+        transform: translateY(0,0);
+    }
+    to {
+        transform: translateY(3px);
+    }
+}
+
+.animation-card {
+    animation: run-animation-card 1s ease infinite alternate running;
+}

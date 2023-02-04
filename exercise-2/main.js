@@ -9,42 +9,43 @@ import axios from "axios"
 /* URL สำหรับการดึงข้อมูลจาก Rest Api */
 const URL = "https://pokeapi.co/api/v2/pokemon"
 
+/* 
+
+api นี้จะเรียกโปเกม่อนด้วย https://pokeapi.co/api/v2/pokemon/path ไปเรื่อยๆ เช่น 
+โปเกม่อนตัวที่ 1 => https://pokeapi.co/api/v2/pokemon/1 
+โปเกม่อนตัวที่ 2 => https://pokeapi.co/api/v2/pokemon/2 
+โปเกม่อนตัวที่ 3 => https://pokeapi.co/api/v2/pokemon/3 
+
+*/
+
 /* pokemon ตัวปัจจุบัน ในที่นี้ให้เริ่มที่ตัวที่ 1 */
 let quantity = 1
 
 
-/* ฟังชันก์ที่น้องต้องสร้างขึ้นมาเอง */
-async function fetchApi(pokemon) {
-    try {
-        const result = await axios.get(`${URL}/${pokemon}`)
-        const picture = result.data.sprites.front_default
-        const name = result.data.name
-        const abilities = result.data.abilities
-        
-        displayCard(picture,name,abilities)
-    }catch(err) {
-        console.log(err)
-    }
+/* รายละเอียดในฟังชันก์ที่น้องต้องสร้างขึ้นมาเอง
+
+หลักการคือ น้องต้องนำข้อมูลที่เป็นส่วนสำคัญในการแสดงผล คือ
+รูปภาพโปเกม่อน(front_default) ชื่อโปเกม่อน(name) และความสามารถโปเกม่อน(abilities) จากการเรียก api 
+เมื่อได้มาแล้วให้เรียกฟังชันก์ displayCard(x,y,z) และส่งข้อมูลเป็น arguments ตามที่บอกไปตามลำดับ
+
+*/
+async function fetchApi(num) {
+    
 }
 
 leftBtnEl.addEventListener("click",() => {
     /* ส่วนนี้น้องต้องเขียน */
-    quantity--
-    if (quantity === 0){
-        quantity = 1
-    }else {
-        fetchApi(quantity)
-    }
+    /*  หลักการคือฟังชันก์นี้จะเป็นการกดปุ่มซ้าย เมื่อกดก็ต้อง (ใบ้ทำอะไรกับ quantity) 
+        แล้วส่งค่า quantity ไปในฟังชันก์ fetchApi
+    */
 })
 
 rightBtnEl.addEventListener("click",() => {
     /* ส่วนนี้น้องต้องเขียน */
-    quantity++
-    if (quantity === 1279){
-        quantity = 1279
-    }else {
-        fetchApi(quantity)
-    }
+    /* หลักการคือฟังชันก์นี้จะเป็นการกดปุ่มขวา เมื่อกดก็ต้อง (ใบ้ทำอะไรกับ quantity) 
+       แล้วส่งค่า quantity ไปในฟังชันก์ fetchApi
+    */
+    
 })
 
 
