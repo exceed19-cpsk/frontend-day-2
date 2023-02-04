@@ -32,7 +32,6 @@ console.log(result1)
 ]
 */
 
-
 // [EXERCISE] สร้าง Array ใหม่จาก "data" ที่มีข้อมูลคนที่ขึ้นต้นด้วยตัว b และเงินเดือนมากกว่า 7000 และเปลี่ยนชื่อจากอักษรหน้าตัวเล็กให้เป็นตัวใหญ่
 let result2 = data.filter(people => people.name[0] === 'b' && people.salary > 7000).map(people => ({
   ...people,
@@ -45,13 +44,3 @@ console.log(result2)
   { name: 'Belle', age: 51, salary: 7200 }
 ]
 */
-
-
-
-
-
-
-
-
-
-
