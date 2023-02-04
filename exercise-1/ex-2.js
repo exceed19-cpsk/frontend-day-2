@@ -12,16 +12,8 @@ const data = [
 ]
 
 
-/* จงเขียนฟังชันก์ที่ return ค่าอาเรย์ของทุกคนที่อายุมากกว่า 40 และเพิ่มเงินเดือนจากเดิม 2 เท่า โดยที่ตัวแปรเดิม (data) ต้องมีค่าเหมือนเดิม */
 function func1(data){
-    const result = data.filter(e => e.age > 40).map(e => {
-        const item = {...e}
-        item.salary *= 2
-        return item
-
-        // e.salary *= 2
-        // return e
-    })
+    const result = data.filter(e => e.age > 40).map(e => ({...e,salary: e.salary*2}))
     return result
 }
 
