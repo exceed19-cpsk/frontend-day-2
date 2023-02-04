@@ -158,7 +158,20 @@
             "source": [
                 "let test3 = [999,...array,\"Hello\"]\r\nconsole.log(test3)"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 999, 1, 2, 3, 4, 5, 'Hello' ]",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
@@ -489,7 +502,7 @@
         {
             "language": "javascript",
             "source": [
-                "let new_item5 = {...item,stock: item.stock-1}\r\nconsole.log(new_item5)"
+                "let new_item5 = {...item,stock: item.stock-1}\r\nconsole.log(new_item5)\r\n"
             ],
             "outputs": [
                 {
@@ -502,6 +515,12 @@
                                 "  price: 35.99,",
                                 "  tags: [ 'fruit', 'consumable' ],",
                                 "  stock: 9",
+                                "}",
+                                "{",
+                                "  name: 'Apple',",
+                                "  price: 35.99,",
+                                "  tags: [ 'fruit', 'consumable' ],",
+                                "  stock: 10",
                                 "}",
                                 "",
                                 ""
@@ -580,7 +599,7 @@
         {
             "language": "markdown",
             "source": [
-                "## 3.3 - Spread Operator In Function\r\nอันนี้ของแถมละกันน เนื่องจากเราก็สามารถใช้ Spread Operater Function ได้ด้วย\r\nทำให้เราอาจจะกำหนด Function ที่มีจำนวน Parameter ที่ไม่แน่นอนได้ "
+                "## 3.3 - Spread Operator In Function (Rest parameter)\r\nอันนี้ของแถมละกันน เนื่องจากเราก็สามารถใช้ Spread Operater Function ได้ด้วย\r\nทำให้เราอาจจะกำหนด Function ที่มีจำนวน Parameter ที่ไม่แน่นอนได้ "
             ],
             "outputs": []
         },

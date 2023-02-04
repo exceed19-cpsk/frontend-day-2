@@ -19,25 +19,12 @@
             "source": [
                 "function getTotalDays(month,year){\r\n    year -= 543\r\n    if(month == 2){\r\n        if(((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)){\r\n            return 29\r\n        }\r\n        return 28\r\n    }\r\n    else if([1,3,5,7,8,12].includes(month)){\r\n        return 31\r\n    }\r\n    else if([4,6,9,11].includes(month)){\r\n        return 30\r\n    }\r\n}\r\n\r\nconsole.log(\r\n    getTotalDays(7,2537),\r\n    getTotalDays(8,2555),\r\n    getTotalDays(2,2443),\r\n    getTotalDays(2,2543),\r\n    getTotalDays(2,2563),    \r\n    getTotalDays(2,2574),\r\n    getTotalDays(7,2567),\r\n    getTotalDays(11,2384),\r\n    getTotalDays(1,2947)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "31 31 28 29 29 28 31 30 31",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "**OURPUT**  \r\n`31 31 28 29 29 28 31 30 31`"
+                "**OUTPUT**  \r\n`31 31 28 29 29 28 31 30 31`"
             ],
             "outputs": []
         },
@@ -53,25 +40,12 @@
             "source": [
                 "function hasSubstring(text,substring){\r\n    let sl = substring.length\r\n    let count = 0\r\n    for(var i=0;i<=text.length - sl;i++){\r\n        if(text.slice(i,i+sl) === substring){\r\n            count++\r\n        }\r\n    }\r\n    return count\r\n}\r\n\r\nconsole.log(\r\n    hasSubstring(\"ababababababababab\",\"aba\"),\r\n    hasSubstring(\"ababababababababab\",\"abc\"),\r\n    hasSubstring(\"ababababababababab\",\"baba\"),\r\n    hasSubstring(\"qwertyuiop\",\"c\"),\r\n    hasSubstring(\"mxwolkasldklowi\",\"owi\"),\r\n    hasSubstring(\"Hey jude Don’t make it bad\",\"ude\"),\r\n    hasSubstring(\"ABCDEF\",\"ABCDEF\")\r\n)\r\n/* Output\r\n8 0 7 0 1 1 1\r\n */"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "8 0 7 0 1 1 1",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "**OURPUT**  \r\n`8 0 7 0 1 1 1`"
+                "**OUTPUT**  \r\n`8 0 7 0 1 1 1`"
             ],
             "outputs": []
         }
