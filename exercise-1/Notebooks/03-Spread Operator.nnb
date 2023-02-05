@@ -19,19 +19,7 @@
             "source": [
                 "const array = [1,2,3,4,5]"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -45,20 +33,7 @@
             "source": [
                 "let new_array = []\r\nfor(var i=0;i<array.length;i++){\r\n    new_array.push(array[i])\r\n}\r\nnew_array.push(6)\r\nconsole.log(new_array)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4, 5, 6 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -72,20 +47,7 @@
             "source": [
                 "let new_array_spread = [...array,6]\r\nconsole.log(new_array_spread)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4, 5, 6 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -99,39 +61,14 @@
             "source": [
                 "const array = [1,2,3,4,5]"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
                 "let test1 = [...array]\r\nconsole.log(test1)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4, 5 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -145,40 +82,14 @@
             "source": [
                 "let test2 = [...array,6]\r\nconsole.log(test2)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4, 5, 6 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
                 "let test3 = [999,...array,\"Hello\"]\r\nconsole.log(test3)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 999, 1, 2, 3, 4, 5, 'Hello' ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -199,19 +110,7 @@
             "source": [
                 "const array = [1,2,3,4,5]"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -223,22 +122,9 @@
         {
             "language": "javascript",
             "source": [
-                "console.log([...array,6])"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log([])"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4, 5, 6 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -250,22 +136,9 @@
         {
             "language": "javascript",
             "source": [
-                "console.log([900,...array])"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log([])"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 900, 1, 2, 3, 4, 5 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -277,25 +150,9 @@
         {
             "language": "javascript",
             "source": [
-                "console.log([10,20,30,...array,50])"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log([])"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[",
-                                "  10, 20, 30,  1, 2,",
-                                "   3,  4,  5, 50",
-                                "]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -307,22 +164,9 @@
         {
             "language": "javascript",
             "source": [
-                "console.log([...array.slice(0,4)])"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log([])"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 3, 4 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -334,22 +178,9 @@
         {
             "language": "javascript",
             "source": [
-                "console.log([...array.slice(0,2),...array.slice(3)])"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log([])"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[ 1, 2, 4, 5 ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -363,44 +194,14 @@
             "source": [
                 "const item = {\r\n    name: \"Apple\",\r\n    price: 35.99,\r\n    tags: [\"fruit\",\"consumable\"],\r\n    stock: 10\r\n}"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
                 "let new_item1 = {...item}\r\nconsole.log(new_item1)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 35.99,",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 10",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -414,26 +215,7 @@
             "source": [
                 "let new_item2 = {...item, rating: 5.0}\r\nconsole.log(new_item2)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 35.99,",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 10,",
-                                "  rating: 5",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -447,25 +229,7 @@
             "source": [
                 "let new_item3 = {...item, price: 999.99}\r\nconsole.log(new_item3)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 999.99,",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 10",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -479,25 +243,7 @@
             "source": [
                 "let new_item4 = {price: 999.99,...item}\r\nconsole.log(new_item4)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  price: 35.99,",
-                                "  name: 'Apple',",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 10",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -511,31 +257,7 @@
             "source": [
                 "let new_item5 = {...item,stock: item.stock-1}\r\nconsole.log(new_item5)\r\n"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 35.99,",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 9",
-                                "}",
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 35.99,",
-                                "  tags: [ 'fruit', 'consumable' ],",
-                                "  stock: 10",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -556,45 +278,14 @@
             "source": [
                 "const item = {\r\n    name: \"Apple\",\r\n    price: 35.99,\r\n    tags: [\"fruit\",\"consumable\"],\r\n    stock: 10\r\n  }"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "console.log({...item,is_premium:true,tags: [...item.tags,\"healthy\"]})"
+                "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log({})"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "{",
-                                "  name: 'Apple',",
-                                "  price: 35.99,",
-                                "  tags: [ 'fruit', 'consumable', 'healthy' ],",
-                                "  stock: 10,",
-                                "  is_premium: true",
-                                "}",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -615,20 +306,7 @@
             "source": [
                 "function getSum(...numbers){\r\n    let total = 0\r\n    for(var i=0;i<numbers.length;i++){\r\n        total += numbers[i]\r\n    }\r\n    return total\r\n}\r\n\r\nconsole.log(\r\n    getSum(1),\r\n    getSum(10,20,30),\r\n    getSum(1,2,3,4,5,6,7,8,9,10)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "1 60 55",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -647,22 +325,9 @@
         {
             "language": "javascript",
             "source": [
-                "function calculate(operator,...numbers){\r\n    let total = operator === \"*\" ? 1 : 0\r\n    for(var i=0;i<numbers.length;i++){\r\n        if(operator === '+'){\r\n            total += numbers[i]\r\n        }\r\n        else if(operator === '*'){\r\n            total *= numbers[i]\r\n        }\r\n    }\r\n    return total\r\n}\r\n\r\nconsole.log(\r\n    calculate('+',1,2,3),\r\n    calculate('*',1,2,3),\r\n    calculate('+',1,2,3,4,5),\r\n    calculate('*',1,2,3,4,5),\r\n    calculate('+',1),\r\n    calculate('*',1),\r\n    calculate('*',5154,897846,21855,0,4,5465)\r\n)"
+                "function calculate(operator,...numbers){\r\n    let total = operator === \"*\" ? 1 : 0\r\n    /* ส่วนนี้ต้องเขียนนะครับ */\r\n}\r\n\r\nconsole.log(\r\n    calculate('+',1,2,3),\r\n    calculate('*',1,2,3),\r\n    calculate('+',1,2,3,4,5),\r\n    calculate('*',1,2,3,4,5),\r\n    calculate('+',1),\r\n    calculate('*',1),\r\n    calculate('*',5154,897846,21855,0,4,5465)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "6 6 15 120 1 1 0",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",

@@ -24,7 +24,7 @@
         {
             "language": "typescript",
             "source": [
-                "function getTotalDays(month,year){\r\n    year -= 543\r\n    if(month == 2){\r\n        if(((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)){\r\n            return 29\r\n        }\r\n        return 28\r\n    }\r\n    else if([1,3,5,7,8,12].includes(month)){\r\n        return 31\r\n    }\r\n    else if([4,6,9,11].includes(month)){\r\n        return 30\r\n    }\r\n}\r\n\r\nconsole.log(\r\n    getTotalDays(7,2537),\r\n    getTotalDays(8,2555),\r\n    getTotalDays(2,2443),\r\n    getTotalDays(2,2543),\r\n    getTotalDays(2,2563),    \r\n    getTotalDays(2,2574),\r\n    getTotalDays(7,2567),\r\n    getTotalDays(11,2384),\r\n    getTotalDays(1,2947)\r\n)"
+                "function getTotalDays(month,year){\r\n    year -= 543\r\n    if(month == 2){\r\n        if(((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)){\r\n            return 29\r\n        }\r\n        return 28\r\n    }\r\n    /* ส่วนที่น้องน้องเขียนนะครับบ */\r\n}\r\n\r\nconsole.log(\r\n    getTotalDays(7,2537),\r\n    getTotalDays(8,2555),\r\n    getTotalDays(2,2443),\r\n    getTotalDays(2,2543),\r\n    getTotalDays(2,2563),    \r\n    getTotalDays(2,2574),\r\n    getTotalDays(7,2567),\r\n    getTotalDays(11,2384),\r\n    getTotalDays(1,2947)\r\n)"
             ],
             "outputs": []
         },
@@ -45,22 +45,9 @@
         {
             "language": "javascript",
             "source": [
-                "function isPrime(number){\r\n    if(number === 1){\r\n        return false\r\n    }\r\n    for(var i=2;i<number;i++){\r\n        if(number % i == 0){\r\n            return false\r\n        }\r\n    }\r\n    return true\r\n}\r\n\r\nconsole.log(\r\n    isPrime(1),\r\n    isPrime(2),\r\n    isPrime(5),\r\n    isPrime(9),\r\n    isPrime(29),\r\n    isPrime(63),\r\n    isPrime(97)\r\n)"
+                "function isPrime(number){\r\n    if(number === 1){\r\n        return false\r\n    }\r\n    /* ส่วนที่น้องต้องเขียนนะครับบ */\r\n}\r\n\r\nconsole.log(\r\n    isPrime(1),\r\n    isPrime(2),\r\n    isPrime(5),\r\n    isPrime(9),\r\n    isPrime(29),\r\n    isPrime(63),\r\n    isPrime(97)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "false true true false true false true",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",

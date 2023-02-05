@@ -103,41 +103,14 @@
             "source": [
                 "const item = {\r\n    name: \"Apple\",\r\n    price: 35.99,\r\n    tags: [\"fruit\",\"consumable\"],\r\n    stock: 10\r\n}"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
                 "let { price } = item\r\nconsole.log('Price:',price)\r\n\r\nlet { name,tags } = item\r\nconsole.log('Name:',name)\r\nconsole.log('tags:',tags)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "Price: 35.99",
-                                "Name: Apple",
-                                "tags: [ 'fruit', 'consumable' ]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -158,19 +131,7 @@
             "source": [
                 "const item_lists = [\r\n    {\r\n        name: \"Apple\",\r\n        price: 40.00,\r\n        tags: [\"fruit\",\"consumable\"],\r\n        stock: 10\r\n    },\r\n    {\r\n        name: \"Ice Cream\",\r\n        price: 70.00,\r\n        tags: [\"dessert\",\"consumable\"],\r\n        stock: 10\r\n    }\r\n]\r\n\r\nlet [ apple,icecream ] = item_lists"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -184,20 +145,7 @@
             "source": [
                 "function viewPromotion1(item){\r\n    if(item.tags.includes(\"fruit\")){\r\n        return item.price * 0.75\r\n    }\r\n    else if(item.tags.includes(\"dessert\")){\r\n        return item.price * 0.5\r\n    }\r\n    else{\r\n        return item.price\r\n    }\r\n}\r\n\r\nconsole.log(\r\n    viewPromotion1(apple),\r\n    viewPromotion1(icecream)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "30 35",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -211,20 +159,7 @@
             "source": [
                 "function viewPromotion2(item){\r\n    let { tags,price } = item\r\n    if(tags.includes(\"fruit\")){\r\n        return price * 0.75\r\n    }\r\n    else if(tags.includes(\"dessert\")){\r\n        return price * 0.5\r\n    }\r\n    else{\r\n        return price\r\n    }\r\n}\r\n\r\nconsole.log(\r\n    viewPromotion1(apple),\r\n    viewPromotion1(icecream)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "30 35",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -245,20 +180,7 @@
             "source": [
                 "function viewPromotion3({ tags,price }){\r\n    if(tags.includes(\"fruit\")){\r\n        return price * 0.75\r\n    }\r\n    else if(tags.includes(\"dessert\")){\r\n        return price * 0.5\r\n    }\r\n    else{\r\n        return price\r\n    }\r\n}\r\n\r\nconsole.log(\r\n    viewPromotion1(apple),\r\n    viewPromotion1(icecream)\r\n)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "30 35",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
