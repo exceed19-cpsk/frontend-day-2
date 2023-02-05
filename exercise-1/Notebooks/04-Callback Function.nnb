@@ -491,7 +491,7 @@
         {
             "language": "javascript",
             "source": [
-                "function func1(amount,func) {\r\n    if (amount.length === 0) {\r\n        return -1\r\n    }else {\r\n        const result = func(amount.length)\r\n        return result\r\n    }\r\n}\r\n\r\nconst callback = (event) => {\r\n    let keep = \"\"\r\n    for (let i=0;i<event;i++){\r\n        keep += \"-\"\r\n    }\r\n    return keep\r\n}\r\n\r\nconsole.log(\r\n    func1(\"***\",callback),\r\n    func1(\"****\",callback),\r\n    func1(\"*****\",callback),\r\n    func1(\"******\",callback),\r\n    func1(\"*******\",callback)\r\n)"
+                "function func1(amount,func) {\r\n    if (amount.length === 0) {\r\n        return -1\r\n    }else {\r\n        const result = func(amount.length)\r\n        return result\r\n    }\r\n}\r\n\r\nconst callback = (event) => {\r\n    /* ใส่โค้ดตรงนี้ */\r\n}\r\n\r\nconsole.log(\r\n    func1(\"***\",callback),\r\n    func1(\"****\",callback),\r\n    func1(\"*****\",callback),\r\n    func1(\"******\",callback),\r\n    func1(\"*******\",callback)\r\n)"
             ],
             "outputs": [
                 {

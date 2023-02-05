@@ -22,7 +22,7 @@
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "javascript",
             "source": [
                 "function getTotalDays(month,year){\r\n    /* ส่วนที่น้องน้องเขียนนะครับบ */\r\n}\r\n\r\nconsole.log(\r\n    getTotalDays(7,2537),\r\n    getTotalDays(8,2555),\r\n    getTotalDays(2,2443),\r\n    getTotalDays(2,2543),\r\n    getTotalDays(2,2563),    \r\n    getTotalDays(2,2574),\r\n    getTotalDays(7,2567),\r\n    getTotalDays(11,2384),\r\n    getTotalDays(1,2947)\r\n)"
             ],
@@ -53,6 +53,13 @@
             "language": "markdown",
             "source": [
                 "**OUTPUT**  \r\n`false true true false true false true`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                ""
             ],
             "outputs": []
         }

@@ -324,7 +324,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map(value => value[0]))"
+                "console.log(data.map((value,index,array) => (1)))"
             ],
             "outputs": [
                 {
@@ -351,7 +351,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map(value => value.length))"
+                "console.log(data.map)"
             ],
             "outputs": [
                 {
@@ -378,7 +378,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map((value,index) => index*2))"
+                "console.log(data.map)"
             ],
             "outputs": [
                 {
@@ -405,7 +405,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map((value,index) => index % 2 === 0))"
+                "console.log(data.map)"
             ],
             "outputs": [
                 {
@@ -432,7 +432,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map((value,index) => `${index+1}) ${value}`))"
+                "console.log(data.map)"
             ],
             "outputs": [
                 {
@@ -459,7 +459,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.map((value,index,array) => [...array,value]))"
+                "console.log(data.map)"
             ],
             "outputs": [
                 {
@@ -853,7 +853,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.filter(v => v%2 === 0))"
+                "console.log(data.filter((value,index,array) => true))"
             ],
             "outputs": [
                 {
@@ -885,7 +885,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.filter(v => v < 10))"
+                "console.log(data.filter)"
             ],
             "outputs": [
                 {
@@ -915,7 +915,7 @@
         {
             "language": "javascript",
             "source": [
-                "// console.log(data.filter(v => v <= 10).map(v => 21-v))"
+                "console.log(data.filter)"
             ],
             "outputs": [
                 {
@@ -941,7 +941,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(data.filter(v => v%2 !== 0 && v < 20).map((v,i) => (-1)**i * v))"
+                "console.log(data.filter)"
             ],
             "outputs": [
                 {
@@ -1004,7 +1004,7 @@
         {
             "language": "javascript",
             "source": [
-                "let result1 = data.filter(people => people.age > 40).map(people => ({\r\n    ...people,\r\n    salary: people.salary*2\r\n}))\r\nconsole.log(result1)"
+                "let result1 = /* ใส้โค้ดตรงนี้ */\r\nconsole.log(result1)"
             ],
             "outputs": [
                 {
@@ -1042,7 +1042,7 @@
         {
             "language": "javascript",
             "source": [
-                "let result2 = data.filter(people => people.name[0] === 'b' && people.salary > 7000).map(people => ({\r\n    ...people,\r\n    name: people.name[0].toUpperCase() + people.name.slice(1)\r\n}))\r\nconsole.log(result2)"
+                "let result2 = /* ใส้โค้ดตรงนี้ */\r\nconsole.log(result2)"
             ],
             "outputs": [
                 {
