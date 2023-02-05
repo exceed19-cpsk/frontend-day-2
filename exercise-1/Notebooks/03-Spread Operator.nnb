@@ -255,7 +255,7 @@
         {
             "language": "javascript",
             "source": [
-                "let new_item5 = {...item,stock: item.stock-1}\r\nconsole.log(new_item5)\r\n"
+                "let new_item5 = {...item,stock: item.stock-1}\r\nconsole.log(new_item5)"
             ],
             "outputs": []
         },
@@ -285,7 +285,20 @@
             "source": [
                 "/* ส่วนนี้น้องต้องเขียนนะครับ */\r\nconsole.log({})"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "{}",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
@@ -325,7 +338,7 @@
         {
             "language": "javascript",
             "source": [
-                "function calculate(operator,...numbers){\r\n    let total = operator === \"*\" ? 1 : 0\r\n    /* ส่วนนี้ต้องเขียนนะครับ */\r\n}\r\n\r\nconsole.log(\r\n    calculate('+',1,2,3),\r\n    calculate('*',1,2,3),\r\n    calculate('+',1,2,3,4,5),\r\n    calculate('*',1,2,3,4,5),\r\n    calculate('+',1),\r\n    calculate('*',1),\r\n    calculate('*',5154,897846,21855,0,4,5465)\r\n)"
+                "function calculate(operator,...numbers){\r\n    /* ส่วนนี้ต้องเขียนนะครับ */\r\n}\r\n\r\nconsole.log(\r\n    calculate('+',1,2,3),\r\n    calculate('*',1,2,3),\r\n    calculate('+',1,2,3,4,5),\r\n    calculate('*',1,2,3,4,5),\r\n    calculate('+',1),\r\n    calculate('*',1),\r\n    calculate('*',5154,897846,21855,0,4,5465)\r\n)"
             ],
             "outputs": []
         },
